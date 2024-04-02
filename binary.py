@@ -84,13 +84,15 @@ def num_conv():
         
     if choice == "11":
         hexadecimal = input("Enter your Hexadecimal value:  ")
-        convert = bin(int(hexadecimal, 16))[2:]
-        print (convert)
+        convert = int(hexadecimal, 16)
+        convert1 = bin(convert)[2:]
+        print (convert1)
         
     if choice == "12":                       
         hexadecimal = input("Enter your Hexadecimal value:  ")
-        convert = oct(int(hexadecimal, 16))[2:]
-        print (convert)
+        convert = int(hexadecimal, 16)
+        convert1 = oct(convert)[2:]
+        print (convert1)
         
     if choice =="13":
         exit = False
