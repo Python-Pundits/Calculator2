@@ -43,8 +43,55 @@ def num_conv():
         
     if choice == "4":
         binary = int(input("Enter your Binary value:  "))  
+        convert = int(str(binary, 2))
+        print (convert)       
+             
+#Converting the Binary number to decimal then converting back to Octal or hexadecimal
+             
+    if choice == "5":
+        binary = int(input("Enter your Binary value:  "))
         convert = int(str(binary), 2)
-        print (convert)                     
+        convert1 = oct(convert)
+        print (convert1)
+    
+    if choice == "6":
+        binary = int(input("Enter your Binary value:  "))
+        convert = int(str(binary), 2)
+        convert1 = hex(convert)
+        print (convert1)
+    
+    if choice == "7":
+        octal = int(input("Enter your Octal value:  "))
+        convert = int(str(octal), 8)
+        print (convert)
+    
+    if choice == "8":
+         octal = int(input("Enter your Octal value:  "))
+         convert = int(str(octal), 8)
+         convert1 = bin(convert)
+         print (convert1)
+         
+    if choice == "9":
+        octal = int(input("Enter your Octal value:  "))
+        convert = int(str(octal), 8)
+        convert1 = hex(convert)
+        print (convert1)
+        
+    if choice == "10":
+        hexadecimal = input("Enter your Hexadecimal value:  ")
+        convert = int(hexadecimal, 16)
+        print (convert)
+        
+    if choice == "11":
+        hexadecimal = input("Enter your Hexadecimal value:  ")
+        convert = int(hexadecimal, 16)            convert1 = bin(convert)
+        print (convert1)
+        
+    if choice == "12":                       
+        hexadecimal = input("Enter your Hexadecimal value:  ")
+        convert = int(hexadecimal, 16)            convert1 = oct(convert)
+        print (convert1)
+        
     if choice =="13":
         exit = False
         quit()
