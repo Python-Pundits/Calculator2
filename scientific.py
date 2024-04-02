@@ -35,6 +35,10 @@ def operate():
         result = sqrt(number)
     elif operation == "exit":
         quit()
+        #Changes made below:
+    else:
+        print(f"{operation} is an invalid operator ")
+        print("==================")
 
     # output
     print(f"Answer = {result}")
