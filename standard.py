@@ -1,24 +1,31 @@
-operator = input("Enter an operator: + - * / " )
+#Changes made: I defined a function called "standard()" so that it can be called upon in the "main.py" file
+exit = True
 
-num1 = float(input("Enter First Number:" ))
+def standard():
+    operator = input("Enter an operator: + - * / " )
 
-num2 = float(input("Enter Second Number:" ))
+    num1 = float(input("Enter First Number:" ))
 
-if operator == "+":
-    addition = num1 + num2
-    print(round(addition))
+    num2 = float(input("Enter Second Number:" ))
     
-elif operator == "-":
-    substraction = num1 - num2
-    print(round(substraction))
+    if operator == "+":
+        addition = num1 + num2
+        print(round(addition))
     
-elif operator == "*":
-    multiplication = num1 * num2
-    print(round(multiplication))
+    elif operator == "-":
+        substraction = num1 - num2
+        print(substraction)
     
-elif operator == "/":
-    division = num1/num2
-    print(round(division))
+    elif operator == "*":
+        multiplication = num1 * num2
+        print(multiplication)
     
-else:
-    print(f"{operator} is an invalid operator")
+    elif operator == "/":
+        division = num1/num2
+        print(division)
+    
+    else:
+        print(f"{operator} is an invalid operator")
+        
+while exit ==True:
+    standard()
