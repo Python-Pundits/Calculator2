@@ -1,4 +1,4 @@
-# from standard import standard()
+from standard import standard()
 from scientific import operate
 from binary import num_conv
 
@@ -10,8 +10,8 @@ print("3. Binary")
 
 user_mode = int(input("Select Mode: "))
 
-# if user_mode == "1":
-#     standard_calc()
+if user_mode == "1":
+    standard()
 
 if user_mode == "2":
     operate()
